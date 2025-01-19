@@ -10,6 +10,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2em; /* Added margin for spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Added box-shadow for depth */
 }
 
 .options {
@@ -24,8 +26,16 @@ body {
     flex-basis: 50%;
 }
 .options input {
-    width: 40%;
+    width: 45%; /* Increased width for better accessibility */
+    padding: .5em; /* Added padding */
+    border: 1px solid #abc3e2; /* Added border */
+    border-radius: .4em; /* Rounded corners */
 }
+.options input:focus {
+    outline: none; /* Remove default outline */
+    border-color: #4c5a6c; /* Change border color on focus */
+}
+
 #preview-checkbox {
     width: auto;
 }
@@ -37,11 +47,13 @@ body {
     border-radius: .4em;
     border-color: #abc3e2;
     font-size: .75em;
-    padding: .25em .5em .25em .5em;
+    padding: .5em 1em; /* Increased padding */
     margin-top: 1em;
+    transition: background-color 0.3s, border-color 0.3s; /* Added transition */
 }
 #buttons-container > *:hover {
     background-color: #4c5a6c;
+    border-color: #f0f6fc; /* Change border color on hover */
 }
 #buttons-container > *:hover:active {
     background-color: #303945;
@@ -50,6 +62,9 @@ body {
 #status-container {
     margin-top: .5em;
     text-align: center;
+    padding: 1em; /* Added padding */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for visibility */
+    border-radius: .4em; /* Rounded corners */
 }
 #error-messages {
     color: #f22c21;
