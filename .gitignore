@@ -1,1 +1,24 @@
-.VSCodeCounter
+# Node modules
+node_modules/
+# Build output
+dist/
+build/
+# Logs
+logs/
+*.log
+# OS generated files
+.DS_Store
+Thumbs.db
+# IDE specific files
+.vscode/
+.idea/
+# Environment variables
+.env
+# Temporary files
+tmp/
+temp/
+# Other common ignores
+*.tmp
+*.bak
+*.swp
+*<
