@@ -32,8 +32,26 @@
    git clone https://github.com/your-username/leet2git.git
    cd leet2git
 
-2.Run the extension
+2. Run the extension
 
 
 3. configure it from pop up after running
 Once setup is complete, you can start using leet2git to automatically commit and push your solutions.
+
+## Usage
+
+1. **Submit your LeetCode solution**: After solving a problem on LeetCode, This extension will automatically add it to the github repo.
+
+2. **Generate the markdown**: The extension will convert the problem description and your solution into markdown format.
+
+3. **Commit and push**: The markdown file is automatically committed to your GitHub repository with a custom commit message.
+
+4. **View your solutions**: Check your GitHub repository for all the problems you’ve solved and their solutions.
+
+
+## Acknowledgments
+
+This project was inspired by [Leet-To_Github](https://github.com/Willisaur/LeetCode-to-GitHub). While the original repository laid the foundation for automating LeetCode solution uploads, it lacked several important features. I expanded upon it by adding these missing features and introducing numerous new functionalities, making the tool more comprehensive and user-friendly. 
+
+Special thanks to the creator of the original repository for providing the backbone of this project!
+
