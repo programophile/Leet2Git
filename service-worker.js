@@ -165,6 +165,11 @@ chrome.webRequest.onCompleted.addListener(
       if (match && match[1]) {
         questionContent = match[1]; // Extract the content from the match
         console.log("Question Content Extracted:", questionContent);
+        chrome.storage.local.set({
+          "question-title": leetcode_questionTitle, // Store the question title
+          "question-body": questionContent // Store the question body
+        });
+
       } else {
         console.error("Meta tag with question data not found.");
       }
@@ -231,6 +236,7 @@ chrome.webRequest.onCompleted.addListener(
     // USING THE API TO CREATE A REPO AND FILE IN BACKGROUND
     // Create the LeetCode solutions repo if it does not exist
     // Checks if the repo exists
+    console.log("Checking if repo exists...", github_username, github_repo);
     await fetch(`https://api.github.com/repos/${github_username}/${github_repo}`,
       {
         headers: {
@@ -297,7 +303,9 @@ chrome.webRequest.onCompleted.addListener(
                 "file-content": atob(content),
                 "commit-message": message.split('\n\n')[0],
                 "commit-description": message.split('\n\n')[1].replace(/^\s+/gm, ''),
-                "commit-hash": ""
+                "commit-hash": "",
+                "question-title": leetcode_questionTitle, // Store the question title
+                "question-body": questionContent // Store the question body
               }).then(
                 // Open the editor
                 chrome.tabs.create({ url: "./editor/editor.html" })
