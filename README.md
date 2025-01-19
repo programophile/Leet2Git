@@ -31,3 +31,7 @@
    ```bash
    git clone https://github.com/your-username/leet2git.git
    cd leet2git
+.
+2.Run the extension:
+3. configure it from pop up after running
+Once setup is complete, you can start using leet2git to automatically commit and push your solutions.
