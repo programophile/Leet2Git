@@ -75,3 +75,36 @@ body {
 #success-message {
     color: #00be00;
 }
+
+/* New styles for the GitHub link */
+#repo-link {
+    text-align: left;
+    margin-top: 2em;
+    padding: 1em; /* Add padding for better spacing */
+    border-radius: .4em; /* Rounded corners */
+    background-color: #161b22; /* Match the page background */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+#repo-link a {
+    color: #f0f6fc; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+#repo-link a:hover {
+    color: #00be00; /* Change text color to green on hover */
+    background-color: rgba(10, 10, 10, 0.2); /* Light background on hover */
+}
+
+/* Enhancements for the GitHub logo */
+#repo-link img {
+    width: 60px; /* Increase size */
+    height: 80px; /* Increase size */
+    margin-right: 0.5em; /* Add margin to the right */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+#repo-link img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
