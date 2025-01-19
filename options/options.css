@@ -94,17 +94,37 @@ body {
 
 #repo-link a:hover {
     color: #00be00; /* Change text color to green on hover */
-    background-color: rgba(10, 10, 10, 0.2); /* Light background on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
 }
 
 /* Enhancements for the GitHub logo */
 #repo-link img {
-    width: 60px; /* Increase size */
-    height: 80px; /* Increase size */
+    width: 48px; /* Increase size */
+    height: 48px; /* Increase size */
     margin-right: 0.5em; /* Add margin to the right */
     transition: transform 0.3s; /* Smooth transition for hover effect */
 }
 
 #repo-link img:hover {
     transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* New styles for the auth token message */
+div p {
+    color: #f0f6fc; /* Light text color */
+    font-size: 1.1em; /* Slightly larger font size */
+    line-height: 1.6; /* Increased line height for better readability */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background color */
+    padding: 0.5em; /* Padding for spacing */
+    border-radius: 0.4em; /* Rounded corners */
+    font-weight: bold; /* Make text bold */
+}
+
+div p a {
+    color: #00be00; /* Link color */
+    text-decoration: underline; /* Underline for links */
+}
+
+div p a:hover {
+    color: #4c5a6c; /* Change link color on hover */
 }
