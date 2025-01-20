@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>L2G Options</title>
     <link rel="stylesheet" href="options.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <form id="options-form">
@@ -12,7 +12,7 @@
 
       <div class="options">
         <label for="github-username">GitHub username: </label>
-        <input id="github-username" placeholder="programophile" />
+        <input id="github-username" placeholder="johnappleseed" />
       </div>
 
       <div id="github-repo-container" class="options">
@@ -22,7 +22,7 @@
 
       <div class="options">
         <label for="github-token">GitHub authentication token: </label>
-        <input id="github-token" type="password" placeholder="auth key with access" />
+        <input id="github-token" type="password" placeholder="ghp_... or github_pat_..." />
       </div>
         
       <div id="preview-container" class="options">
@@ -32,36 +32,33 @@
 
       <div>
         <p>
-          To generate an auth. token, go <a href="https://github.com/settings/tokens">here</a>. You need a classic auth token 
+          To generate an auth. token, go <a href="https://github.com/settings/tokens">here</a>. You need a classic token with repo access.
         </p>
       </div>
-
       <div class="instruction">
         
-      <p>
-        The authentication key requires access to your repository. Ensure that you grant the repo permission while creating the classic auth token.
-      </p>
+        <p>
+          The authentication key requires access to your repository. Ensure that you grant the repo permission while creating the classic auth token.
+        </p>
       </div>
 
       <div id="buttons-container">
         <button id="delete-token-button">Delete token</button>
         <input id="save-options-button" type="submit" value="Save" />
       </div>
-
-      <!-- Updated div for the image and text -->
       <div id="repo-link" class="repo-link">
         <a href="https://github.com/programophile/Leet2Git" target="_blank" rel="noopener">
             <img src="https://w7.pngwing.com/pngs/646/324/png-transparent-github-computer-icons-github-logo-monochrome-head-thumbnail.png" alt="GitHub Logo" style="width: 24px; height: 24px; vertical-align: middle;"/>
             the repo link of this extension
         </a>
-    </div>
+    </div> 
 
       <div id="status-container">
         <div id="error-messages"></div>
         <div id="delete-token"></div>
         <div id="success-message"></div>
       </div>
-    </form>
+    </div>
 
     <script src="options.js"></script>
   </body>
