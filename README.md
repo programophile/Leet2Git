@@ -32,10 +32,10 @@
    git clone https://github.com/your-username/leet2git.git
    cd leet2git
 
-2. Run the extension
+2. go to extensions setting(turn on dev mode on extension seeting) and click load unpack
+3. load this extension , fill up all info , click the auto update button
 
 
-3. configure it from pop up after running
 Once setup is complete, you can start using leet2git to automatically commit and push your solutions.
 
 ## Usage
